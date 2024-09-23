@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Bangladesh</title>
+
+  <!-- Google Font CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Google Font CDN -->
+
+  <!-- Tailwind and DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            main: '#111111',
+            mainSeventypOpacity: '#111111B3',
+            mainThirtypOpacity: '#1111114D',
+            mainFivepOpacity: '#1111110D',
+            headerBg: '#F9F7F3',
+            buttonBg: '#B4F461',
+          },
+          fontFamily: {
+            lexend: 'Lexend',
+          },
+        },
+      },
+    }
+  </script>
+  <!-- Tailwind and DaisyUI CDN -->
+
+</head>
+
+<body class="font-lexend">
+
+  <!-- Navbar Design Starts -->
+  <header class="bg-headerBg pt-6 pb-10 sticky top-0">
+    <!-- Navbar Container -->
+    <div class="mx-auto w-[97%] lg:w-[80%] flex justify-between">
+
+      <button class="btn sm:btn-sm md:btn-md lg:px-8 bg-buttonBg">
+        <a class="font-semibold text-xl text-main" href="/blog.html">Blog</a>
+      </button>
+
+      <div class="hidden lg:flex justify-center items-center gap-x-4">
+        <img src="assets/logo.png" alt="Donate box logo">
+        <h1 class="font-semibold text-xl text-main">Donate Bangladesh</h1>
+      </div>
+
+      <div class="flex justify-center items-center gap-x-1">
+        <img class="lg:h-[50%]" src="assets/coin.png" alt="Picture of a golden coin">
+        <span class="font-medium text-mainSeventypOpacity text-xl" id="current-balance">10000</span>
+        <span class="font-medium text-mainSeventypOpacity text-xl">BDT</span>
+      </div>
+
+    </div>
+    <!-- Navbar Container -->
+  </header>
+  <!-- Navbar Design Ends -->
+
+  <main class="mt-20">
+    <!-- Interactive Buttons Starts -->
+    <section class="flex justify-center gap-x-4 sticky top-32 backdrop-blur bg-white bg-opacity-70">
+      <button id="donation-btn-intr" class="btn bg-buttonBg px-6 font-semibold text-main text-xl">Donation</button>
+      <button id="history-btn-intr"
+        class="btn px-8 bg-transparent font-medium text-xl text-mainSeventypOpacity">History</button>
+    </section>
+    <!-- Interactive Buttons Ends -->
+
+    <!-- Card Section Starts -->
+    <section id="card-container" class="mt-8 lg:w-[63%] mx-auto">
+      <!-- Card 1 Start -->
+      <div class="flex items-center border rounded-xl lg:p-8 sm:p-4">
+
+        <!-- Card Left -->
+        <div class="w-[50%]">
+          <img src="assets/noakhali.png" alt="Relief team in Noakhali">
+        </div>
+        <!-- Card Left -->
+
+        <!-- Card Right -->
+        <div class="w-[50%] flex flex-col">
+
+          <div class="flex justify-center py-3 rounded-xl items-center gap-1 bg-mainFivepOpacity w-[25%] mb-8">
+            <img src="assets/coin.png" alt="Picture of a coin">
+            <span id="noakhali-balance">1000</span>
+            <span>BDT</span>
+          </div>
+
+          <div class="flex flex-col gap-y-5">
+            <h1 class="font-bold text-xl text-main">Donate to help for the Flood at Noakhali, Bangladesh</h1>
+            <p class="font-normal text-mainSeventypOpacity text-base">Flooding is a very common aspect in our life, as
+              we all are aware Bangladesh is monsoon country. So recently, the flooding in Noakhali District took a turn
+              for the worse. Peoples homes were destroyed because of this flood. So help us in our relief effort by
+              donating. Every donation matter no matter how small or big!</p>
+            <input id="noakhali-donation-input" type="text" placeholder="Donation Amount"
+              class="input input-bordered w-full" />
+            <button id="noakhali-donate-btn" class="btn bg-buttonBg text-xl text-main font-semibold">Donate
+              Now!</button>
+            <dialog id="my-modal-5" class="modal modal-bottom sm:modal-middle">
+              <div class="modal-box flex flex-col justify-center items-center">
+                <h3 class="text-3xl text-main font-bold">Congrats!</h3>
+                <img class="mt-6" src="assets/coin.png" alt="">
+                <p class="py-4">You have donated for Famine-2024</p>
+                <p class="py-4 font-bold text-xl text-main">Successfully!</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close Confirmation!</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+
+        </div>
+        <!-- Card Right -->
+
+      </div>
+      <!-- Card 1 End -->
+
+
+    </section>
+    <!-- Card Section Ends -->
+
+    <!-- History Section Starts -->
+    <section id="history-container">
+
+    </section>
+    <!-- History Section Ends -->
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="scripts/intrButton.js"></script>
+  <script src="scripts/commonFunc.js"></script>
+  <script src="scripts/commonFunc2.js"></script>
+  <script src="scripts/addMoney.js"></script>
+</body>
+
+</html>
