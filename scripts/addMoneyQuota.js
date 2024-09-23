@@ -44,6 +44,6 @@ document.getElementById('quota-donate-btn').addEventListener('click', function (
     document.getElementById('history-container').appendChild(log);
 
     // Showing the modal
-    document.getElementById('my-modal-5').showModal();
+    document.getElementById('my-modal-5-quota').showModal();
   }
 })
