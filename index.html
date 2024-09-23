@@ -65,9 +65,9 @@
   </header>
   <!-- Navbar Design Ends -->
 
-  <main class="mt-20">
+  <main class="mt-20 lg:px-0 px-2">
     <!-- Interactive Buttons Starts -->
-    <section class="flex justify-center gap-x-4 sticky top-32 backdrop-blur bg-white bg-opacity-70">
+    <section class="flex justify-center gap-x-4 sticky top-28 backdrop-blur bg-white bg-opacity-70 py-4">
       <button id="donation-btn-intr" class="btn bg-buttonBg px-6 font-semibold text-main text-xl">Donation</button>
       <button id="history-btn-intr"
         class="btn px-8 bg-transparent font-medium text-xl text-mainSeventypOpacity">History</button>
@@ -75,20 +75,20 @@
     <!-- Interactive Buttons Ends -->
 
     <!-- Card Section Starts -->
-    <section id="card-container" class="mt-8 lg:w-[63%] mx-auto">
+    <section id="card-container" class="mt-8 lg:w-[63%] mx-auto space-y-8">
       <!-- Card 1 Start -->
-      <div class="flex items-center border rounded-xl lg:p-8 sm:p-4">
+      <div class="flex flex-col lg:flex-row items-center border rounded-xl lg:p-8 p-4">
 
         <!-- Card Left -->
-        <div class="w-[50%]">
+        <div class="lg:w-[50%]">
           <img src="assets/noakhali.png" alt="Relief team in Noakhali">
         </div>
         <!-- Card Left -->
 
         <!-- Card Right -->
-        <div class="w-[50%] flex flex-col">
+        <div class="lg:w-[50%] flex flex-col">
 
-          <div class="flex justify-center py-3 rounded-xl items-center gap-1 bg-mainFivepOpacity w-[25%] mb-8">
+          <div class="flex justify-center py-3 rounded-xl items-center gap-1 bg-mainFivepOpacity lg:w-[25%] w-[40%] mb-8 lg:mt-0 mt-4">
             <img src="assets/coin.png" alt="Picture of a coin">
             <span id="noakhali-balance">1000</span>
             <span>BDT</span>
@@ -125,6 +125,100 @@
 
       </div>
       <!-- Card 1 End -->
+
+      <!-- Card 2 Start -->
+      <div class="flex flex-col lg:flex-row items-center border rounded-xl lg:p-8 p-4">
+
+        <!-- Card Left -->
+        <div class="lg:w-[50%]">
+          <img src="assets/feni.png" alt="Relief team in Noakhali">
+        </div>
+        <!-- Card Left -->
+
+        <!-- Card Right -->
+        <div class="lg:w-[50%] flex flex-col">
+
+          <div class="flex justify-center py-3 rounded-xl items-center gap-1 bg-mainFivepOpacity lg:w-[25%] w-[40%] mb-8 lg:mt-0 mt-4">
+            <img src="assets/coin.png" alt="Picture of a coin">
+            <span id="noakhali-balance">4000</span>
+            <span>BDT</span>
+          </div>
+
+          <div class="flex flex-col gap-y-5">
+            <h1 class="font-bold text-xl text-main">Donate to help for the Flood at Feni, Bangladesh</h1>
+            <p class="font-normal text-mainSeventypOpacity text-base">The floods in Feni is even worse than other districts. Many people have lost their homes and are starving right now. Many of the crop fields is destroyed and the domestic animals killed. People in Feni right now suffering from diseases and as we know starvation. So your donation can help the people in Feni to help them get back on their feet. So donate what ever you can so that we help them including food, medical supplies and clean water!</p>
+            <input id="noakhali-donation-input" type="text" placeholder="Donation Amount"
+              class="input input-bordered w-full" />
+            <button id="noakhali-donate-btn" class="btn bg-buttonBg text-xl text-main font-semibold">Donate
+              Now!</button>
+            <dialog id="my-modal-5" class="modal modal-bottom sm:modal-middle">
+              <div class="modal-box flex flex-col justify-center items-center">
+                <h3 class="text-3xl text-main font-bold">Congrats!</h3>
+                <img class="mt-6" src="assets/coin.png" alt="">
+                <p class="py-4">You have donated for Famine-2024</p>
+                <p class="py-4 font-bold text-xl text-main">Successfully!</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close Confirmation!</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+
+        </div>
+        <!-- Card Right -->
+
+      </div>
+      <!-- Card 2 End -->
+
+      <!-- Card 3 Start -->
+      <div class="flex flex-col lg:flex-row items-center border rounded-xl lg:p-8 p-4">
+
+        <!-- Card Left -->
+        <div class="lg:w-[50%]">
+          <img src="assets/quota-protest.png" alt="Relief team in Noakhali">
+        </div>
+        <!-- Card Left -->
+
+        <!-- Card Right -->
+        <div class="lg:w-[50%] flex flex-col">
+
+          <div class="flex justify-center py-3 rounded-xl items-center gap-1 bg-mainFivepOpacity lg:w-[25%] w-[40%] mb-8 lg:mt-0 mt-4">
+            <img src="assets/coin.png" alt="Picture of a coin">
+            <span id="noakhali-balance">8000</span>
+            <span>BDT</span>
+          </div>
+
+          <div class="flex flex-col gap-y-5">
+            <h1 class="font-bold text-xl text-main">Aid for the Injured in the Quota Movement</h1>
+            <p class="font-normal text-mainSeventypOpacity text-base">In August 2024, the "Quota Movement" in Bangladesh became extremely large and became a country-wide movement. The majority of population came out on the road in the protest. Naturally, as it happens with every major movement, there was resistence. And people of every age got hurt, sustaining many injuries some are very serious. By contributing here you will help those in need of emergency treatment. Those who can't afford these kind of treatment we will help your donation to reach those people. Let us band together to help those people. </p>
+            <input id="noakhali-donation-input" type="text" placeholder="Donation Amount"
+              class="input input-bordered w-full" />
+            <button id="noakhali-donate-btn" class="btn bg-buttonBg text-xl text-main font-semibold">Donate
+              Now!</button>
+            <dialog id="my-modal-5" class="modal modal-bottom sm:modal-middle">
+              <div class="modal-box flex flex-col justify-center items-center">
+                <h3 class="text-3xl text-main font-bold">Congrats!</h3>
+                <img class="mt-6" src="assets/coin.png" alt="">
+                <p class="py-4">You have donated for Famine-2024</p>
+                <p class="py-4 font-bold text-xl text-main">Successfully!</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close Confirmation!</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+
+        </div>
+        <!-- Card Right -->
+
+      </div>
+      <!-- Card 3 End -->
 
 
     </section>
