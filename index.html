@@ -38,7 +38,7 @@
 
 </head>
 
-<body class="font-lexend">
+<body class="font-lexend flex flex-col min-h-screen">
 
   <!-- Navbar Design Starts -->
   <header class="bg-headerBg pt-6 pb-10 sticky top-0">
@@ -65,7 +65,7 @@
   </header>
   <!-- Navbar Design Ends -->
 
-  <main class="mt-20 lg:px-0 px-2">
+  <main class="mt-20 lg:px-0 px-2 flex-1">
     <!-- Interactive Buttons Starts -->
     <section class="flex justify-center gap-x-4 sticky top-28 backdrop-blur bg-white bg-opacity-70 py-4">
       <button id="donation-btn-intr" class="btn bg-buttonBg px-6 font-semibold text-main text-xl">Donation</button>
@@ -249,7 +249,19 @@
     <!-- History Section Ends -->
   </main>
 
-  <footer>
+  <footer id="footer-index" class="mt-20 bg-headerBg">
+
+    <div class="xl:p-8 lg:p-4 p-2 flex flex-col justify-center items-center">
+
+      <div class="flex justify-center items-center gap-x-4 mb-4">
+        <img src="assets/logo.png" alt="Donate box logo">
+        <h1 class="font-semibold text-xl text-main">Donate Bangladesh</h1>
+      </div>
+
+      <div class="xl:w-[65%] mx-auto">
+        <p>Here at, Donate Bangladesh we have only one goal. Help those in need. Right now, our mission is to help the people that have been affected by the recent flooding all over the country and the people that have been injured in the Quota Movement. We take you donation and use those donation to fund our relief activities all over the country. Our team work is working tirelessly all over the country for the betterment of the people. We hope you stay with us and keep donating so that, we as nation can lift our head up high and make our mark in the world.</p>
+      </div>
+    </div>
 
   </footer>
 

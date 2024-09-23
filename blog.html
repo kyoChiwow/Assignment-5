@@ -20,31 +20,144 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
+            main: '#111111',
+            mainSeventypOpacity: '#111111B3',
+            mainThirtypOpacity: '#1111114D',
+            mainFivepOpacity: '#1111110D',
+            headerBg: '#F9F7F3',
+            buttonBg: '#B4F461',
+          },
+          fontFamily: {
+            lexend: 'Lexend',
+          },
+        },
+      },
     }
   </script>
   <!-- Tailwind and DaisyUI CDN -->
 
 </head>
 
-<body>
+<body class="font-lexend">
 
   <header>
+    <!-- Navbar Design Starts -->
+    <header class="bg-headerBg pt-6 pb-10 sticky top-0">
+      <!-- Navbar Container -->
+      <div class="mx-auto w-[97%] md:w-[95%] lg:w-[95%] xl:w-[80%] flex justify-between items-center">
 
+        <button class="btn sm:btn-sm md:btn-md lg:px-8 bg-buttonBg">
+          <a class="font-semibold text-xl text-main" href="/index.html">Home</a>
+        </button>
+
+        <div class="hidden md:flex justify-center items-center gap-x-4">
+          <img src="assets/logo.png" alt="Donate box logo">
+          <h1 class="font-semibold text-xl text-main">Donate Bangladesh</h1>
+        </div>
+
+        <div class="flex justify-center items-center gap-x-1">
+          <img class="lg:h-[50%]" src="assets/coin.png" alt="Picture of a golden coin">
+          <span class="font-medium text-mainSeventypOpacity text-xl" id="current-balance">10000</span>
+          <span class="font-medium text-mainSeventypOpacity text-xl">BDT</span>
+        </div>
+
+      </div>
+      <!-- Navbar Container -->
+    </header>
+    <!-- Navbar Design Ends -->
   </header>
 
-  <main>
+  <main class="p-2">
+    <section class="xl:w-[90%] mx-auto mt-20 border p-8 rounded-xl">
 
+      <div class="mb-10">
+        <h1 class="text-5xl text-main text-bold text-center">Frequently Asked <span
+            class="text-mainSeventypOpacity">Questions!</span></h1>
+      </div>
+
+      <div class="xl:w-[70%] mx-auto">
+
+        <!-- Question 1 -->
+        <div class="collapse collapse-plus bg-base-200 mb-8">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+          <div class="collapse-content">
+            <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
+              A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an object-oriented representation of the web page, it can be modified with a scripting language such as JavaScript.</p>
+          </div>
+        </div>
+        <!-- Question 1 -->
+
+        <!-- Question 2 -->
+        <div class="collapse collapse-plus bg-base-200 mb-8">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+          <div class="collapse-content">
+            <p class="mb-3">JavaScript provides several methods to select DOM elements. Here are some of them:
+              <ul class="ml-6">
+                <li class="list-disc">Using getElementById</li>
+                <li class="list-disc">Using getElementByClassName</li>
+                <li class="list-disc">Using getElementByTagName</li>
+                <li class="list-disc">Using querySelector</li>
+                <li class="list-disc">Using querySelectorAll</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <!-- Question 2 -->
+
+        <!-- Question 3 -->
+        <div class="collapse collapse-plus bg-base-200 mb-8">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+          <div class="collapse-content">
+            <p class="mb-3">Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common parent element. This pattern is particularly valuable in scenarios where you have a large number of similar elements, such as list items, and want to optimize event handling.</p>
+            <ul class="ml-6">
+              <li class="list-disc"><span class="text-main font-bold">Efficiency:</span> Event delegation reduces the number of event listeners, improving memory usage and performance, especially when dealing with a large number of elements.</li>
+              <li class="list-disc"><span class="text-main font-bold">Dynamic elements:</span> It works seamlessly with dynamically added or removed child elements, as the common ancestor continues to listen for events on them.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Question 3 -->
+
+        <!-- Question 4 -->
+        <div class="collapse collapse-plus bg-base-200 mb-8">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+          <div class="collapse-content">
+            <p class="mb-3">Attributes are values that contain additional information about HTML elements. They usually come in name/value pairs, and may be essential depending on the element. Here are some ways you can manipulate the elemen't attributes:</p>
+            <ul class="ml-6">
+              <li class="list-disc">hasAttribute()</li>
+              <li class="list-disc">getAttribute()</li>
+              <li class="list-disc">setAttribute()</li>
+              <li class="list-disc">removeAttribute()</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Question 4 -->
+
+      </div>
+
+
+    </section>
   </main>
 
-  <footer>
+  <footer class="mt-20 bg-headerBg">
+    <div class="xl:p-8 lg:p-4 p-2 flex flex-col justify-center items-center">
 
+      <div class="hidden md:flex justify-center items-center gap-x-4 mb-4">
+        <img src="assets/logo.png" alt="Donate box logo">
+        <h1 class="font-semibold text-xl text-main">Donate Bangladesh</h1>
+      </div>
+
+      <div class="xl:w-[65%] mx-auto">
+        <p>Here at, Donate Bangladesh we have only one goal. Help those in need. Right now, our mission is to help the people that have been affected by the recent flooding all over the country and the people that have been injured in the Quota Movement. We take you donation and use those donation to fund our relief activities all over the country. Our team work is working tirelessly all over the country for the betterment of the people. We hope you stay with us and keep donating so that, we as nation can lift our head up high and make our mark in the world.</p>
+      </div>
+
+    </div>
   </footer>
 
-<script src="scripts/js1.js"></script>
+  <script src="scripts/js1.js"></script>
 </body>
 
 </html>
