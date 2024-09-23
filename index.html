@@ -43,13 +43,13 @@
   <!-- Navbar Design Starts -->
   <header class="bg-headerBg pt-6 pb-10 sticky top-0">
     <!-- Navbar Container -->
-    <div class="mx-auto w-[97%] lg:w-[80%] flex justify-between">
+    <div class="mx-auto w-[97%] md:w-[95%] lg:w-[95%] xl:w-[80%] flex justify-between items-center">
 
       <button class="btn sm:btn-sm md:btn-md lg:px-8 bg-buttonBg">
         <a class="font-semibold text-xl text-main" href="/blog.html">Blog</a>
       </button>
 
-      <div class="hidden lg:flex justify-center items-center gap-x-4">
+      <div class="hidden md:flex justify-center items-center gap-x-4">
         <img src="assets/logo.png" alt="Donate box logo">
         <h1 class="font-semibold text-xl text-main">Donate Bangladesh</h1>
       </div>
@@ -75,31 +75,35 @@
     <!-- Interactive Buttons Ends -->
 
     <!-- Card Section Starts -->
-    <section id="card-container" class="mt-8 lg:w-[63%] mx-auto space-y-8">
+    <section id="card-container" class="mt-8 xl:w-[63%] lg:w-[95%] mx-auto space-y-8">
       <!-- Card 1 Start -->
-      <div class="flex flex-col lg:flex-row items-center border rounded-xl lg:p-8 p-4">
+      <div class="flex flex-col lg:flex-row items-center border rounded-xl lg:p-8 p-4 justify-evenly">
 
         <!-- Card Left -->
-        <div class="lg:w-[50%]">
+        <div class="lg:w-[49%] xl:w-[50%]">
           <img src="assets/noakhali.png" alt="Relief team in Noakhali">
         </div>
         <!-- Card Left -->
 
         <!-- Card Right -->
-        <div class="lg:w-[50%] flex flex-col">
+        <div class="lg:w-[47%] xl:w-[50%] flex flex-col">
 
-          <div class="flex justify-center py-3 rounded-xl items-center gap-1 bg-mainFivepOpacity lg:w-[25%] w-[40%] mb-8 lg:mt-0 mt-4">
+          <div
+            class="flex justify-center py-3 lg:py-1 xl:py-3 rounded-xl items-center gap-1 bg-mainFivepOpacity md:w-[18%] lg:w-[30%] xl:w-[25%] w-[40%] mb-8 lg:mb-2.5 xl:mb-8 lg:mt-0 mt-4">
             <img src="assets/coin.png" alt="Picture of a coin">
             <span id="noakhali-balance">1000</span>
             <span>BDT</span>
           </div>
 
-          <div class="flex flex-col gap-y-5">
+          <div class="flex flex-col gap-y-5 lg:gap-y-3 xl:gap-y-5">
             <h1 class="font-bold text-xl text-main">Donate to help for the Flood at Noakhali, Bangladesh</h1>
-            <p class="font-normal text-mainSeventypOpacity text-base">Flooding is a very common aspect in our lives, as
-              we all are aware Bangladesh is monsoon country. So recently, the flooding in Noakhali District took a turn
-              for the worse. Peoples homes were destroyed because of this flood. So help us in our relief effort by
-              donating. Every donation matter no matter how small or big!</p>
+            <p class="font-normal text-mainSeventypOpacity text-base"><span
+                class="sm:hidden lg:block xl:hidden">Recently, flooding in Noakhali took a devasting turn. People in
+                Feni lost their homes and are in desperate need to help. So, please donate here however small of big,
+                because every donation counts.</span> <span class="lg:hidden xl:block">Flooding is a very common aspect
+                in our lives, as we all are aware Bangladesh is monsoon country. So recently, the flooding in Noakhali
+                District took a turn for the worse. Peoples homes were destroyed because of this flood. So help us in
+                our relief effort by donating. Every donation matters no matter how small or big!</span></p>
             <input id="noakhali-donation-input" type="text" placeholder="Donation Amount"
               class="input input-bordered w-full" />
             <button id="noakhali-donate-btn" class="btn bg-buttonBg text-xl text-main font-semibold">Donate
@@ -127,18 +131,20 @@
       <!-- Card 1 End -->
 
       <!-- Card 2 Start -->
-      <div class="flex flex-col lg:flex-row items-center border rounded-xl lg:p-8 p-4">
+      <div
+        class="flex flex-col lg:flex-row items-center border rounded-xl lg:gap-x-2 xl:gap-x-0 lg:p-8 p-4 justify-evenly">
 
         <!-- Card Left -->
-        <div class="lg:w-[50%]">
+        <div class="lg:w-[52%] xl:w-[50%]">
           <img src="assets/feni.png" alt="Relief team in Noakhali">
         </div>
         <!-- Card Left -->
 
         <!-- Card Right -->
-        <div class="lg:w-[50%] flex flex-col">
+        <div class="lg:w-[47%] xl:w-[50%] flex flex-col">
 
-          <div class="flex justify-center py-3 rounded-xl items-center gap-1 bg-mainFivepOpacity lg:w-[25%] w-[40%] mb-8 lg:mt-0 mt-4">
+          <div
+            class="flex justify-center py-3 lg:py-1 xl:py-3 rounded-xl items-center gap-1 bg-mainFivepOpacity md:w-[18%] lg:w-[30%] xl:w-[25%] w-[40%] mb-8 lg:mb-2.5 xl:mb-8 lg:mt-0 mt-4">
             <img src="assets/coin.png" alt="Picture of a coin">
             <span id="noakhali-balance">4000</span>
             <span>BDT</span>
@@ -146,7 +152,8 @@
 
           <div class="flex flex-col gap-y-5">
             <h1 class="font-bold text-xl text-main">Donate to help for the Flood at Feni, Bangladesh</h1>
-            <p class="font-normal text-mainSeventypOpacity text-base">The floods in Feni is even worse than other districts. Many people have lost their homes and are starving right now. Many of the crop fields is destroyed and the domestic animals killed. People in Feni right now suffering from diseases and as we know starvation. So your donation can help the people in Feni to help them get back on their feet. So donate what ever you can so that we help them including food, medical supplies and clean water!</p>
+            <p class="font-normal text-mainSeventypOpacity text-base">The floods in Feni is even worse than other
+              districts. Many people have lost their homes and are starving right now.<span class="sm:block lg:hidden xl:inline">Many of the crop fields is destroyed and the domestic animals killed. People in Feni right now suffering from diseases and as we know starvation.</span> So your donation can help the people in Feni to help them get back on their feet. Donate what ever you can so that we help them including food, medical supplies and clean water!</p>
             <input id="noakhali-donation-input" type="text" placeholder="Donation Amount"
               class="input input-bordered w-full" />
             <button id="noakhali-donate-btn" class="btn bg-buttonBg text-xl text-main font-semibold">Donate
@@ -174,18 +181,19 @@
       <!-- Card 2 End -->
 
       <!-- Card 3 Start -->
-      <div class="flex flex-col lg:flex-row items-center border rounded-xl lg:p-8 p-4">
+      <div class="flex flex-col lg:flex-row items-center border rounded-xl lg:p-8 p-4 justify-evenly">
 
         <!-- Card Left -->
-        <div class="lg:w-[50%]">
+        <div class="lg:w-[49%] xl:w-[50%]">
           <img src="assets/quota-protest.png" alt="Relief team in Noakhali">
         </div>
         <!-- Card Left -->
 
         <!-- Card Right -->
-        <div class="lg:w-[50%] flex flex-col">
+        <div class="lg:w-[47%] xl:w-[50%] flex flex-col">
 
-          <div class="flex justify-center py-3 rounded-xl items-center gap-1 bg-mainFivepOpacity lg:w-[25%] w-[40%] mb-8 lg:mt-0 mt-4">
+          <div
+            class="flex justify-center py-3 lg:py-1 xl:py-3 rounded-xl items-center gap-1 bg-mainFivepOpacity md:w-[18%] lg:w-[30%] xl:w-[25%] w-[40%] mb-8 lg:mb-2.5 xl:mb-8 lg:mt-0 mt-4">
             <img src="assets/coin.png" alt="Picture of a coin">
             <span id="noakhali-balance">8000</span>
             <span>BDT</span>
@@ -193,7 +201,17 @@
 
           <div class="flex flex-col gap-y-5">
             <h1 class="font-bold text-xl text-main">Aid for the Injured in the Quota Movement</h1>
-            <p class="font-normal text-mainSeventypOpacity text-base">In August 2024, the "Quota Movement" in Bangladesh became extremely large and became a country-wide movement. The majority of population came out on the road in the protest. Naturally, as it happens with every major movement, there was resistence. And people of every age got hurt, sustaining many injuries some are very serious. By contributing here you will help those in need of emergency treatment. Those who can't afford these kind of treatment we will help your donation to reach those people. Let us band together to help those people. </p>
+            <p class="font-normal text-mainSeventypOpacity text-base"><span class="sm:hidden lg:block xl:hidden">In
+                August 2024, The population of Bangladesh erupted in protest for the Quota Distribution. So naturally,
+                as with every movement there was resistence. People of all age sustained injuries. By dontaing here you
+                are helping those people to get the treatment they could nevery afford. Remember, Every donation
+                counts.</span> <span class="sm:block lg:hidden xl:block">In August 2024, the "Quota Movement" in
+                Bangladesh became extremely large and became a country-wide movement. The majority of population came
+                out on the road in the protest. Naturally, as it happens with every major movement, there was
+                resistence. And people of every age got hurt, sustaining many injuries some are very serious. By
+                contributing here you will help those in need of emergency treatment. Those who can't afford these kind
+                of treatment we will help your donation to reach those people. Let us band together to help those
+                people.</span> </p>
             <input id="noakhali-donation-input" type="text" placeholder="Donation Amount"
               class="input input-bordered w-full" />
             <button id="noakhali-donate-btn" class="btn bg-buttonBg text-xl text-main font-semibold">Donate
